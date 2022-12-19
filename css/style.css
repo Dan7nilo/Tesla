@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+#{
+    margin: 0;
+    padding: 0;
+    box box-sizing: border-box;
+    background-image:url(../)
+}
+body{
+    background-size: 100% auto;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+}
+.logo{
+    
+    width: 135px;
+}
+.container-grid{
+    display: inline-flex;
+    margin: 0px;
+}
+
+.container-grid a{
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+    display: inline;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+}
+.cabecalho{
+    display:flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 2px;
+}
+.menu a:hover{
+   height: 20px;   
+    border-radius: 4px;
+    text-decoration: none;
+    background-color:  rgba(176, 184, 199, 0.5);
+    transition:background 0.3s ease-in;
+    color:rgb(0, 0, 0);
+}
+    
+.menui a:hover{
+   height: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color:  rgba(176, 184, 199, 0.5);
+    transition:background 0.3s ease-in;
+    color:rgb(0, 0, 0);
+}
+a{
+    color:rgb(44, 44, 44);
+    font-family: 'Fira Code', monospace;
+}
+.nav{
+    padding-left: 45%;
+    padding-top: 51px;
+    line-height: 0px;
+}
+.model{
+    padding-top: 40px;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+.botao{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 30%;
+    margin-inline:660px;
+}
+.botao button{
+    margin-top: 600px;
+    font-size:15px;
+    margin: 5px;
+    border-radius: 4px; 
+margin: 10px;
+    width: 600px;
+}
+.btn-1{
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(50, 55, 61);
+    color: aliceblue;
+    cursor: pointer;
+}
+.btn-2{
+    outline:none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(218, 218, 218);
+    text-decoration: none;
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.seta{
+    width: 20px;
+    height: 20px;
+    background-image:url("../img/setaDown.png");
+    background-size: contain;
+    position:absolute;
+    left: 50%;
+    margin-top: 48%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    animation-name: seta;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes seta{
+    0%{
+        top:0px
+    }
+    100%{
+        top:20px
+    }
+}
